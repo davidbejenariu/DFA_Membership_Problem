@@ -1,0 +1,29 @@
+#
+# comment lines (skip them)
+#
+Sigma:
+	a
+	b
+End
+#
+# comment lines (skip them)
+#
+States:
+	q1, S
+	q2
+	q3, F
+	q4
+End
+#
+# comment lines (skip them)
+#
+Transitions:
+	q1, a, q2
+	q1, b, q4
+	q2, a, q2
+	q2, b, q3
+	q3, a, q2
+	q3, b, q3
+	q4, a, q4
+	q4, b, q4
+End
